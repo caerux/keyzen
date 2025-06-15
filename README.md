@@ -11,7 +11,6 @@ A modern, feature-rich typing speed test application designed to help you master
 - **Smooth Animations**: Fluid cursor transitions and responsive UI
 - **Dark/Light Theme**: Toggle between themes for comfortable typing
 - **Data Export**: Backup your progress with JSON export functionality
-- **Future-Ready**: Architecture designed for user authentication integration
 
 ## 🚀 Quick Start
 
@@ -88,18 +87,6 @@ Keyzen works seamlessly across all devices with a responsive design that adapts 
 ## 🎨 Themes
 
 Switch between light and dark themes using the theme toggle in the header for a comfortable typing experience in any lighting condition.
-
-## 📈 Future Enhancements
-
-- User authentication and cloud sync
-- Multiplayer typing races
-- Custom text input options
-- Advanced typing analytics with AI insights
-- Mobile app version
-
-## 🤝 Contributing
-
-Contributions are welcome! Feel free to open issues or submit pull requests.
 
 ## 📄 License
 
