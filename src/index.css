@@ -1,0 +1,83 @@
+/* Custom fonts import */
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-mono;
+  }
+}
+
+@layer components {
+  .typing-text {
+    @apply text-2xl leading-relaxed tracking-wide;
+  }
+
+  .char-correct {
+    @apply text-white;
+    transition: all 0.15s ease-out;
+  }
+
+  .char-incorrect {
+    @apply text-red-500;
+    transition: all 0.15s ease-out;
+  }
+
+  .char-current {
+    @apply text-gray-500 dark:text-gray-600 relative;
+    transition: all 0.15s ease-out;
+  }
+
+  .char-current::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    @apply bg-yellow-400;
+    opacity: 1;
+    transition: all 0.15s ease-out;
+    transform: translateX(0);
+  }
+
+  .char-untyped {
+    @apply text-gray-500 dark:text-gray-600;
+    transition: all 0.15s ease-out;
+  }
+
+  .char-current-end {
+    position: relative;
+  }
+
+  .char-current-end::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    @apply bg-yellow-400;
+    opacity: 1;
+    transition: all 0.15s ease-out;
+    transform: translateX(0);
+  }
+
+  .word-error-underline {
+    position: relative;
+  }
+
+  .word-error-underline::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    @apply bg-red-500;
+    opacity: 1;
+  }
+}
